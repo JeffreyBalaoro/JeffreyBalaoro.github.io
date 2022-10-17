@@ -7,19 +7,23 @@
     <title> Jeff_Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/10e75488da.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel='stylesheet' id='font-awesome-css'  href='https://nepdoc.com/...../fonts/font-awesome.min.css' type='text/css' media='all' />
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
             <img src="image/LogoImage_3.png" alt="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <h1>Hello, I'm Jeffrey B.</h1>
@@ -66,8 +70,15 @@
         <h1 class="sub-title">Resume</h1>
         <div class="services-list">
         <div>
-            <h2>web design</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vitae autem sed eaque quia dolores ex delectus aliquam distinctio exercitationem culpa adipisci, assumenda itaque laborum sint, odio doloribus aspernatur reiciendis.</p>
+            <h2>Personal</h2>
+            <p>Name: Jeffrey Locaba Balaoro</p>
+            <p>Age: 22</p>
+            <p>Gender: Male</p>
+            <p>Date of Birth: September 12, 2000</p>
+            <p>Addres: San Francisco Bulan Sorsogon</p>
+            <p>Phone Number: 09380558866</p>
+            <h2>Educational Background</h2>
+            <p></p>
             <a herf="#"> learn more</a>
         </div>
         </div>
@@ -79,11 +90,11 @@
         <h1 class="sub-title">My Work</h1>
             <div class="work-list">
             <div class="work">
-                <img src="image/Pic_1.jpg">
+                <img src="image/Domcart_Act.png">
                 <div class="layer">
-                    <h3>Sample Project</h3>
-                    <p>dhhddskskkdjeufh</p>
-                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    <h3>DOM CART ACTIVITY</h3>
+                    <p></p>
+                    <a href="https://github.com/JeffreyBalaoro/IT-213-DOM-CART-ACTIVITY"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -91,7 +102,7 @@
                 <div class="layer">
                     <h3>Sample Project</h3>
                     <p>hddhhhfhfhfhfh</p>
-                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -99,7 +110,8 @@
                 <div class="layer">
                     <h3>Sample Project</h3>
                     <p>hahahahahahahhahahah</p>
-                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
+                    
                 </div>
             </div>
             <div class="work">
@@ -107,7 +119,7 @@
                 <div class="layer">
                     <h3>Sample Project</h3>
                     <p>hahahahahahahhahahah</p>
-                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -115,7 +127,7 @@
                 <div class="layer">
                     <h3>Sample Project</h3>
                     <p>hahahahahahahhahahah</p>
-                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -123,7 +135,7 @@
                 <div class="layer">
                     <h3>Sample Project</h3>
                     <p>hahahahahahahhahahah</p>
-                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    <a href="#"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
                 </div>
             </div>
         </div>
@@ -141,6 +153,8 @@
                 <div class="social-icons">
                     <a href=""><i class="fab fa-facebook"></i></a>
                     <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fa fa-phone"></i></a>
+                    <a href=""><i class="fa fa-envelope"></i></a>
                 </div>
                 <a href="" download class="btn btn2">Download CV</a>
             </div>
@@ -153,6 +167,9 @@
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Jeffrey Balaoro 2022</p>
     </div>
 </div>
 
@@ -173,6 +190,18 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.rigth = "-200px";
     }
 </script>
 </body>
