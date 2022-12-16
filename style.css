@@ -272,10 +272,11 @@ form .btn2{
     width: 100;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #0004ff;
     font-weight: 300;
     margin-top: 20px;
 }
+
 /*--------Contact----------*/
 nav .fas{
     display: none;
@@ -290,7 +291,7 @@ nav .fas{
         font-size: 16px;
     }
     .header-text h1{
-        font-size: 32px;
+        font-size: 30px;
     }
 nav .fas{
     display: block;
