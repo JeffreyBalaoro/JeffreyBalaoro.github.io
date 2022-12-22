@@ -16,18 +16,18 @@
         <nav>
             <img src="image/logo.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Resume</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#header" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Resume</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <h1>Hello, I'm Jeffrey B.</h1>
-            <p>Future Programming</p>
+            <h1>Jeffrey Balaoro</h1>
+            <p>I'm a Future Programmer</p>
         </div>
     </div>
 </div>
@@ -60,6 +60,7 @@
                     <li><span>Java -</span> 20%</li>
                 </ul>
             </div>
+            <a href="/CV.pdf" download class="btn btn2">Download CV</a>
         </div>
         </div>
     </div>
@@ -194,8 +195,21 @@
                     <a href="https://github.com/JeffreyBalaoro/Node_App_Balaoro_Jeffrey.git"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
                 </div>
             </div>
+            <div class="work">
+                <img src="image/note app.jpg">
+                <div class="layer">
+                    <h3>Note App</h3>
+                    <a href="https://github.com/JeffreyBalaoro/Node_App_Balaoro_Jeffrey.git"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/note app.jpg">
+                <div class="layer">
+                    <h3>Note App</h3>
+                    <a href="https://github.com/JeffreyBalaoro/Node_App_Balaoro_Jeffrey.git"><i box-icon  type="solid" class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
 </div>
 <!----------contact----------->
@@ -204,15 +218,12 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact</h1>
-                <p> balaorojeffrey218@gmail.com></p>
-                <p><i class=""></i>09380558866</p>
+                <p> balaorojeffrey218@gmail.com</p>
+                <p>09380558866</p>
                 <div class="social-icons">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fa fa-phone"></i></a>
-                    <a href=""><i class="fa fa-envelope"></i></a>
+                    <a href="https://web.facebook.com/jeffrey.balaoro.98"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/JeffreyBalaoro"><i class="fab fa-github"></i></a>
                 </div>
-                <a href="ccc" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form>
@@ -257,7 +268,7 @@
         sidemenu.style.right = "0";
     }
     function closemenu(){
-        sidemenu.style.rigth = "-200px";
+        sidemenu.style.right = "-200px";
     }
 </script>
 </body>
