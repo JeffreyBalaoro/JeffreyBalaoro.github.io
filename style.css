@@ -278,12 +278,15 @@ form .btn2{
     width: 100;
     text-align: center;
     padding: 25px 0;
-    background: #0004ff;
+    background: #1313b9;
     font-weight: 300;
     margin-top: 20px;
 }
+.copyright i{
+    color: #0008ff;
+}
 
-/*--------Contact----------*/
+/*--------small screen----------*/
 nav .fas{
     display: none;
 }
@@ -293,7 +296,7 @@ nav .fas{
         background-image: url(image/background2.jpg);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 200%;
         font-size: 16px;
     }
     .header-text h1{
@@ -345,9 +348,20 @@ nav .fas{
         display: flex;
         justify-content: center;
     }
-
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    .copyright{
+        font-size: 14px;
+    }
 
+}
+#msg{
+    color:#32131d
+    margin-top -10px;
+    display: block;
 }
